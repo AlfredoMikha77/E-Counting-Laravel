@@ -1,0 +1,92 @@
+/* transaksi.css */
+
+/* Style for the top bar */
+.top-bar {
+    background-color: #1E90FF; /* Warna biru tua */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
+
+/* Style for the admin indicator */
+.admin-indicator {
+    font-size: 18px;
+}
+
+/* Style for the profile details */
+.profile-details {
+    font-weight: bold;
+}
+
+/* Style for the container */
+.container {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style for the table */
+.table-data {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-data th, .table-data td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table-data th {
+    background-color: #f2f2f2;
+}
+
+/* Style for the buttons */
+.btn-back {
+    padding: 10px 20px;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto;
+}
+
+.btn-back:hover {
+    background-color: #3751FF;
+}
+
+
+/* Style for the top bar */
+.top-bar {
+    background-color: #1E90FF; /* Warna biru tua */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
+
+/* Style for the admin indicator */
+.admin-indicator {
+    font-size: 18px;
+}
+
+/* Style for the profile details */
+.profile-details {
+    font-weight: bold;
+}
