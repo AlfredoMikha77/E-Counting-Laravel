@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Penyedia;
+use App\Models\TransaksiPenyedia;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 
@@ -33,11 +34,16 @@ class PenyediaController extends Controller
         $tujuan_upload = 'img_penyedia';
         $photo->move($tujuan_upload, $nama_photo);
 
-        Penyedia::create([
+        $penyedia = Penyedia::create([
             'nama' => $request->nama,
             'harga' => $request->harga,
             'deskripsi' => $request->deskripsi,
             'photo' => $nama_photo,
+        ]);
+
+        // Menyimpan data ke tabel transaksi_penyedias
+        TransaksiPenyedia::create([
+            'penyedia_id' => $penyedia->id_penyedia,
         ]);
 
         return redirect('/penyedia');
@@ -61,7 +67,6 @@ class PenyediaController extends Controller
         $penyedia = Penyedia::find($id_penyedia);
 
         if($request->hasFile('photo')){
-
             File::delete('img_penyedia/'.$penyedia->photo);
             $photo = $request->file('photo');
             $nama_photo = time() . '_' . $photo->getClientOriginalName();

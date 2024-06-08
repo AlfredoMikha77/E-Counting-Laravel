@@ -11,19 +11,19 @@
                 </a>
             </li>
             <li>
-                <a href="transaction/transaction.php">
+                <a href="/layanan">
                     <i></i>
-                    <span class="links_name">Layanan Transaksi</span>
+                    <span class="links_name">Layanan</span>
                 </a>
             </li>
             <li>
-                <a href="penyedia/penyedia.php">
+                <a href="/penyedia">
                     <i></i>
                     <span class="links_name">Penyedia</span>
                 </a>
             </li>
             <li>
-                <a href="cetak-transaksi-penyedia/transaksi-penyedia.php">
+                <a href="/transaksi-penyedia">
                     <i></i>
                     <span class="links_name">Transaksi Penyedia</span>
                 </a>

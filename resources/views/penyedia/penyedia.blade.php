@@ -24,7 +24,7 @@ Penyedia |  Admin
     <tr>
       <td><img src="{{ asset('img_penyedia/' . $penyedia->photo) }}" alt="" width="300px"></td>
       <td>{{ $penyedia->nama }}</td>
-      <td>Rp. {{ number_format($penyedia->harga) }}</td>
+      <td>Rp. {{ number_format(intval($penyedia->harga)) }}</td>
       <td>{{ $penyedia->deskripsi }}</td>
       <td>
         <a class='btn-edit' href="/penyedia/edit/{{ $penyedia->id_penyedia }}">Edit</a>
